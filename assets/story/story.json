@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "meta": { "title": "Our Japan" },
+
+  "theme": {
+    "fonts": {},
+    "styles": {
+      "plain": { "size": 22, "color": "#FFFFFF", "shadow": true },
+      "display": { "size": 52, "weight": 800, "color": "#FFFFFF" },
+      "paper": {
+        "frame": "card",
+        "size": 20,
+        "color": "#111111",
+        "bg": "#FFFFFF"
+      },
+      "bubble": { "frame": "speech", "size": 20 },
+      "dialog": {
+        "frame": "pixelBox",
+        "size": 15,
+        "color": "#FFFFFF",
+        "bg": "#1B1B6B",
+        "typewriter": true
+      }
+    }
+  },
+
+  "assets": {
+    "a_fuji": {
+      "type": "image",
+      "w": 4032,
+      "h": 3024,
+      "src": { "web": "img/fuji_1600.jpg" },
+      "placeholder": "LEHV6nWB2yk8pyo0adR*.7kCMdnj",
+      "focal": [0.5, 0.4]
+    }
+  },
+
+  "chapters": [
+    {
+      "id": "day-1-tokyo",
+      "title": "Day 1: Tokyo",
+      "icon": "🗼",
+      "scenes": [
+        {
+          "id": "title",
+          "height": 1.0,
+          "background": { "type": "color", "value": "#0B1D3A" },
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Our Japan",
+              "style": "display",
+              "place": { "mode": "overlay", "anchor": "center" },
+              "enter": { "type": "fadeUp", "at": [0.3, 0.5] }
+            },
+            {
+              "type": "text",
+              "text": "scroll ↓",
+              "style": "plain",
+              "place": { "mode": "overlay", "anchor": "bottomCenter" },
+              "enter": { "type": "fade", "at": [0.4, 0.55] }
+            }
+          ]
+        },
+        {
+          "id": "arrival",
+          "height": 1.2,
+          "background": {
+            "type": "image",
+            "asset": "a_fuji",
+            "fit": "cover",
+            "motion": "kenBurns"
+          },
+          "blocks": [
+            {
+              "type": "text",
+              "text": "We made it.",
+              "style": "plain",
+              "place": {
+                "mode": "overlay",
+                "anchor": "bottomCenter",
+                "margin": 0.08
+              },
+              "enter": { "type": "fadeUp", "at": [0.45, 0.6] }
+            },
+            {
+              "type": "text",
+              "text": "Jet lag: 1, us: 0",
+              "style": "bubble",
+              "place": { "mode": "overlay", "anchor": "topRight" },
+              "enter": { "type": "fade", "at": [0.4, 0.55] },
+              "override": { "rotation": -4, "color": "#E4572E" }
+            }
+          ]
+        },
+        {
+          "id": "caption-below",
+          "height": 1.0,
+          "background": { "type": "color", "value": "#000000" },
+          "blocks": [
+            {
+              "type": "image",
+              "asset": "a_fuji",
+              "place": { "mode": "flow", "widthFrac": 0.95 },
+              "enter": { "type": "fade", "at": [0.3, 0.45] }
+            },
+            {
+              "type": "text",
+              "text": "Ramen at 2am.",
+              "style": "paper",
+              "place": { "mode": "flow" },
+              "enter": { "type": "fadeUp", "at": [0.45, 0.6] }
+            }
+          ]
+        },
+        {
+          "id": "pinned-dialog",
+          "height": 2.5,
+          "pin": true,
+          "background": { "type": "color", "value": "#101030" },
+          "blocks": [
+            {
+              "type": "text",
+              "text": "A wild Shinkansen appeared!\nWe boarded it. It was very fast.",
+              "style": "dialog",
+              "place": {
+                "mode": "overlay",
+                "anchor": "center",
+                "widthFrac": 0.85
+              },
+              "enter": { "type": "fade", "at": [0.1, 0.8] }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-2-kyoto",
+      "title": "Day 2: Kyoto",
+      "icon": "⛩️",
+      "scenes": [
+        {
+          "id": "kyoto-map",
+          "height": 1.0,
+          "background": {
+            "type": "map",
+            "from": { "lat": 35.68, "lng": 139.76, "zoom": 10 },
+            "to": { "lat": 35.01, "lng": 135.77, "zoom": 10 },
+            "route": "dotted",
+            "label": "Tokyo → Kyoto"
+          },
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Next stop: Kyoto",
+              "style": "plain",
+              "place": { "mode": "overlay", "anchor": "center" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

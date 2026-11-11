@@ -1,17 +1,20 @@
-# kakejiku_app
+# Kakejiku
 
-A new Flutter project.
+Time to take something old and make it anew.
+Hang out and scroll thru a story or two.
 
-## Getting Started
+## Credits:
 
-This project is a starting point for a Flutter application.
+> AC/DC's 10-4 Good Buddy World Tour Extravaganza - Japan Edition
+> via Family & Friends
 
-A few resources to get you started if this is your first Flutter project:
+### Special Thanks:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- [Claude](https://claude.ai/)
+- [Flutter](https://flutter.dev/)
+- [GitHub](https://https://github.com/DanKheadies)
+- Google
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+Compliments of DTFun LLC 2027
